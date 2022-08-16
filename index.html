@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body onload="newQuestion()">
+    
+<div class="container">
+    <div class="answerBTN">
+        <button class="wrong" onclick="wrongAnswer()">ZŁA ODPOWIEDŹ</button>
+    </div>
+    <div class="questionbox">
+        <div class="bold" id="category">KATEGORIA HERE</div>
+        <div id="question">PYTANIE HERE</div>
+        <div><span class="bold">POPRAWNA ODPOWIEDŹ: </span><span id="answer"></span></div>
+        <div class="questionBTN">
+            <button id="newQuestionBTN" onclick="newQuestion()">NASTĘPNE PYTANIE</button>
+            <button class="countdown" onclick="countdown()">ODLICZANIE</button>
+        </div>
+    </div>
+    <div class="answerBTN">
+        <button class="correct" onclick="correctAnswer()">DOBRA ODPOWIEDŹ</button>
+    </div>
+</div>
+
+<div id="countdown">5
+</div>
+
+</body>
+</html>
