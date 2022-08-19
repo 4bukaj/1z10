@@ -64,20 +64,31 @@ body > *{
     background-color: red;
 }
 
-.questionBTN > button{
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons button{
     font-family: 'Poppins', sans-serif;
     border: 2px solid #000;
     border-radius: 5px;
     padding: 10px 30px;
     font-size: 16px;
+    margin: 5px;
 }
 
 #countdown{
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     padding: 20px;
     font-size: 30px;
+}
+
+button{
+    cursor: pointer;
 }
